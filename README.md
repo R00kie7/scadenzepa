@@ -14,10 +14,6 @@
 
 ---
 
----
-
-## 🎯 **Cosa Fa Questa App**
-
 ## 🎯 **Cosa Fa Questa App**
 
 Con un setup iniziale di pochi minuti, potrai **registrare entrata e uscita con un solo click**! L'app calcola automaticamente ore lavorate, straordinari, buoni pasto e guadagni extra.
