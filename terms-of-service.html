@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termini di Servizio - Scadenze PA</title>
+    <meta name="description" content="Termini di Servizio di Scadenze PA. Condizioni d'uso, limitazioni di responsabilità e informazioni legali.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+            min-height: 100vh;
+        }
+        
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        
+        header { padding: 2rem 0; text-align: center; color: white; }
+        
+        .hero {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 1rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #fff, #f0f8ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:last-child { border-bottom: none; margin-bottom: 0; }
+        
+        .section h2 {
+            color: #3B82F6;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .section h3 {
+            color: #555;
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.8rem 0;
+        }
+        
+        .section p { margin-bottom: 1rem; text-align: justify; }
+        .section ul { margin: 1rem 0; padding-left: 1.5rem; }
+        .section li { margin-bottom: 0.5rem; }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #10B981, #3B82F6);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 1.5rem 0;
+        }
+        
+        .highlight-box h3 { color: white; margin-top: 0; }
+        .highlight-box strong { color: #FEF3C7; }
+        
+        .warning-box {
+            background: #FEF3C7;
+            border: 1px solid #FCD34D;
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .critical-box {
+            background: #FEE2E2;
+            border: 2px solid #EF4444;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .critical-box h3 { color: #DC2626; margin-top: 0; }
+        
+        .info-card {
+            background: #EFF6FF;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #3B82F6;
+            margin: 1rem 0;
+        }
+        
+        .info-card h4 { color: #3B82F6; margin-bottom: 0.5rem; }
+        
+        .back-button {
+            background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            margin: 2rem 0;
+        }
+        
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+        }
+        
+        footer { text-align: center; padding: 2rem 0; color: white; opacity: 0.8; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .content { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="hero">
+                <h1><i class="fas fa-file-contract"></i> Termini di Servizio</h1>
+                <p>Condizioni d'uso di Scadenze PA</p>
+                <p><strong>Ultimo aggiornamento:</strong> 9 Novembre 2025</p>
+                <p><strong>Versione:</strong> 1.0</p>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="section">
+                <h2><i class="fas fa-info-circle"></i> 1. Accettazione dei Termini</h2>
+                <p>Utilizzando l'applicazione <strong>Scadenze PA</strong> (di seguito "l'App"), sviluppata da Antonio Rota, accetti di essere vincolato ai presenti Termini di Servizio.</p>
+                
+                <div class="warning-box">
+                    <i class="fas fa-info-circle"></i>
+                    <strong>Importante:</strong> Se non accetti questi termini, non installare né utilizzare l'App. L'uso continuato dell'App costituisce accettazione dei presenti termini.
+                </div>
+                
+                <p>Questi Termini di Servizio devono essere letti insieme alla <a href="privacy-policy.html">Privacy Policy</a>, che descrive come gestiamo i tuoi dati personali.</p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-building"></i> 2. Informazioni sul Fornitore</h2>
+                <div class="info-card">
+                    <h4>Sviluppatore</h4>
+                    <p><strong>Nome:</strong> Antonio Rota (persona fisica)<br>
+                    <strong>Indirizzo:</strong> Mondragone, Italia<br>
+                    <strong>Email:</strong> appdevmond@gmail.com<br>
+                    <strong>Oggetto email:</strong> TERMINI SCADENZE PA</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-briefcase"></i> 3. Descrizione del Servizio</h2>
+                <p>Scadenze PA è un'applicazione gratuita per la gestione di procedure, eventi e scadenze, specificamente progettata per il contesto della Pubblica Amministrazione italiana.</p>
+                
+                <h3><i class="fas fa-list"></i> Funzionalità Principali</h3>
+                <ul>
+                    <li><strong>Procedure (Template):</strong> Creazione modelli riutilizzabili di flussi procedurali</li>
+                    <li><strong>Eventi:</strong> Istanze di procedure con date, protocolli, partecipanti</li>
+                    <li><strong>Azioni/Scadenze:</strong> Singoli step calcolati automaticamente con notifiche</li>
+                    <li><strong>Categorie:</strong> Organizzazione per tipo procedura (Urbanistica, Contratti, Concorsi, etc.)</li>
+                    <li><strong>Notifiche Smart:</strong> Promemoria automatici configurabili</li>
+                    <li><strong>Ricerca Avanzata:</strong> Filtri per categoria, titolo, protocollo, periodo</li>
+                    <li><strong>Google Drive Sync:</strong> Sincronizzazione opzionale su tuo account personale</li>
+                    <li><strong>Export:</strong> Esportazione in JSON, Excel, PDF</li>
+                    <li><strong>WhatsApp/Email Sharing:</strong> Condivisione dati procedura</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-gift"></i> 4. Licenza d'Uso</h2>
+                <p>Ti viene concessa una licenza <strong>gratuita, personale, non esclusiva, non trasferibile e revocabile</strong> per utilizzare l'App sui tuoi dispositivi personali (PC Windows e smartphone Android).</p>
+                
+                <h3><i class="fas fa-check-circle"></i> Puoi:</h3>
+                <ul>
+                    <li>✅ Installare l'App su più dispositivi tuoi</li>
+                    <li>✅ Usare l'App per scopi professionali e personali</li>
+                    <li>✅ Sincronizzare dati tra dispositivi tramite Google Drive</li>
+                    <li>✅ Esportare e condividere i tuoi dati creati nell'App</li>
+                </ul>
+                
+                <h3><i class="fas fa-ban"></i> NON puoi:</h3>
+                <ul>
+                    <li>❌ Decodificare, decompilare o effettuare reverse engineering dell'App</li>
+                    <li>❌ Rivendere, ridistribuire o sublicenziare l'App</li>
+                    <li>❌ Rimuovere o modificare copyright, marchi o avvisi legali</li>
+                    <li>❌ Utilizzare l'App per scopi illegali o non autorizzati</li>
+                    <li>❌ Copiare, modificare o creare opere derivate dal codice dell'App</li>
+                    <li>❌ Utilizzare bot, scraper o sistemi automatizzati per accedere all'App</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-exclamation-triangle"></i> 5. LIMITAZIONE DI RESPONSABILITÀ (CRITICO)</h2>
+                
+                <div class="critical-box">
+                    <h3><i class="fas fa-exclamation-circle"></i> DISCLAIMER FONDAMENTALE - LEGGI ATTENTAMENTE</h3>
+                    <p><strong>Scadenze PA è uno STRUMENTO AUSILIARIO, non un sistema ufficiale di gestione scadenze legali.</strong></p>
+                    <p>L'utente è <strong>ESCLUSIVAMENTE RESPONSABILE</strong> della verifica dell'accuratezza di date, scadenze, calcoli e procedure.</p>
+                </div>
+                
+                <h3><i class="fas fa-shield-alt"></i> Nessuna Garanzia di Accuratezza</h3>
+                <p>L'App viene fornita "COSÌ COM'È" senza garanzie di alcun tipo, esplicite o implicite, tra cui:</p>
+                <ul>
+                    <li>❌ <strong>Accuratezza delle date calcolate:</strong> I calcoli automatici di scadenze possono essere errati</li>
+                    <li>❌ <strong>Affidabilità notifiche:</strong> Le notifiche possono non funzionare o arrivare in ritardo</li>
+                    <li>❌ <strong>Integrità dati:</strong> I dati locali possono essere persi (crash, reset dispositivo)</li>
+                    <li>❌ <strong>Sincronizzazione:</strong> Google Drive sync può fallire senza preavviso</li>
+                    <li>❌ <strong>Compatibilità normativa:</strong> L'App potrebbe non rispecchiare aggiornamenti normativi</li>
+                </ul>
+                
+                <h3><i class="fas fa-gavel"></i> Limitazione di Responsabilità per Danni</h3>
+                <p>Antonio Rota <strong>NON sarà in alcun caso responsabile</strong> per:</p>
+                <ul>
+                    <li><strong>Scadenze mancate:</strong> Perdita termini legali, amministrativi o contrattuali</li>
+                    <li><strong>Danni diretti:</strong> Sanzioni, multe, perdite economiche derivanti da uso errato dell'App</li>
+                    <li><strong>Danni indiretti:</strong> Perdita dati, interruzione attività, danni reputazionali</li>
+                    <li><strong>Malfunzionamenti:</strong> Bug, crash, perdita dati, corruzioni database</li>
+                    <li><strong>Terze parti:</strong> Problemi con Google AdMob, Google Drive, Android OS</li>
+                </ul>
+                
+                <div class="critical-box">
+                    <h3><i class="fas fa-user-shield"></i> Responsabilità Utente</h3>
+                    <p><strong>È TUA RESPONSABILITÀ:</strong></p>
+                    <ul>
+                        <li>✅ Verificare SEMPRE manualmente date e scadenze calcolate</li>
+                        <li>✅ Consultare normative ufficiali e calendari giudiziari</li>
+                        <li>✅ Mantenere backup regolari dei dati critici</li>
+                        <li>✅ Non affidarti esclusivamente a Scadenze PA per scadenze legali</li>
+                        <li>✅ Utilizzare sistemi ufficiali della tua PA come riferimento primario</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-code"></i> 6. Proprietà Intellettuale</h2>
+                <p>Tutti i diritti di proprietà intellettuale relativi all'App (codice, design, grafica, loghi, documentazione) sono di proprietà esclusiva di Antonio Rota.</p>
+                
+                <h3><i class="fas fa-database"></i> Tuoi Dati</h3>
+                <p>I dati che crei nell'App (procedure, eventi, scadenze, note) rimangono di <strong>tua esclusiva proprietà</strong>. Antonio Rota non rivendica alcun diritto su di essi.</p>
+                
+                <div class="highlight-box">
+                    <h3><i class="fas fa-lock"></i> Nessun Accesso ai Tuoi Dati</h3>
+                    <p>I tuoi dati sono salvati <strong>localmente sul tuo dispositivo</strong> o sul <strong>tuo account Google Drive personale</strong>. Lo sviluppatore non ha accesso a questi dati.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-ad"></i> 7. Pubblicità</h2>
+                <p>L'App è gratuita e si sostiene tramite annunci pubblicitari forniti da <strong>Google AdMob</strong>.</p>
+                
+                <div class="highlight-box">
+                    <h3><i class="fas fa-shield-alt"></i> Solo Annunci NON Personalizzati</h3>
+                    <p>Utilizziamo <strong>esclusivamente annunci NON personalizzati</strong>, rispettando la tua privacy. Nessuna profilazione comportamentale.</p>
+                    <p>Per maggiori dettagli, consulta la <a href="privacy-policy.html" style="color: #FEF3C7;">Privacy Policy</a>.</p>
+                </div>
+                
+                <h3><i class="fas fa-hand-pointer"></i> Interazione con Annunci</h3>
+                <ul>
+                    <li>Cliccando su un annuncio, lasci l'App e vieni reindirizzato a siti terzi</li>
+                    <li>Antonio Rota non è responsabile del contenuto o delle pratiche di siti terzi</li>
+                    <li>Gli annunci sono selezionati da Google, non dallo sviluppatore</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-sync"></i> 8. Aggiornamenti e Modifiche</h2>
+                
+                <h3><i class="fas fa-download"></i> Aggiornamenti App</h3>
+                <p>Gli aggiornamenti dell'App possono essere rilasciati tramite Google Play Store o Microsoft Store per:</p>
+                <ul>
+                    <li>Correzione bug e problemi di sicurezza</li>
+                    <li>Miglioramento prestazioni</li>
+                    <li>Aggiunta nuove funzionalità</li>
+                    <li>Conformità con nuove versioni Android/Windows</li>
+                </ul>
+                
+                <div class="warning-box">
+                    <i class="fas fa-info-circle"></i>
+                    <strong>Nessuna garanzia di compatibilità:</strong> Aggiornamenti futuri potrebbero rendere incompatibili dati creati con versioni precedenti. Mantieni sempre backup.
+                </div>
+                
+                <h3><i class="fas fa-edit"></i> Modifiche ai Termini</h3>
+                <p>Antonio Rota si riserva il diritto di modificare questi Termini di Servizio in qualsiasi momento. Le modifiche entreranno in vigore immediatamente alla pubblicazione.</p>
+                <p>L'uso continuato dell'App dopo modifiche costituisce accettazione dei nuovi termini.</p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-ban"></i> 9. Sospensione e Terminazione</h2>
+                
+                <h3><i class="fas fa-user-slash"></i> Diritto di Sospensione</h3>
+                <p>Antonio Rota si riserva il diritto di sospendere o terminare l'accesso all'App in caso di:</p>
+                <ul>
+                    <li>Violazione dei presenti Termini di Servizio</li>
+                    <li>Utilizzo fraudolento o illegale dell'App</li>
+                    <li>Reverse engineering o tentativi di hackeraggio</li>
+                    <li>Uso che danneggi altri utenti o l'infrastruttura</li>
+                </ul>
+                
+                <h3><i class="fas fa-power-off"></i> Chiusura Servizio</h3>
+                <p>Antonio Rota può decidere di interrompere lo sviluppo e il supporto dell'App in qualsiasi momento, senza obbligo di preavviso o compensazione.</p>
+                
+                <div class="warning-box">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <strong>Backup essenziali:</strong> Poiché l'App può essere dismessa senza preavviso, effettua regolarmente backup dei tuoi dati usando la funzione Export.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-android"></i> 10. Requisiti di Sistema e Compatibilità</h2>
+                
+                <h3><i class="fas fa-mobile-alt"></i> Android</h3>
+                <ul>
+                    <li><strong>Versione minima:</strong> Android 5.0 (Lollipop) - API 21</li>
+                    <li><strong>Versione consigliata:</strong> Android 8.0+ (Oreo) per prestazioni ottimali</li>
+                    <li><strong>Spazio richiesto:</strong> 50-100 MB (variabile con dati utente)</li>
+                    <li><strong>Permessi:</strong> Notifiche, Archiviazione, Internet (per annunci e sync)</li>
+                </ul>
+                
+                <h3><i class="fas fa-desktop"></i> Windows</h3>
+                <ul>
+                    <li><strong>Versione minima:</strong> Windows 10 (64-bit)</li>
+                    <li><strong>Versione consigliata:</strong> Windows 11 per Material Design 3 completo</li>
+                    <li><strong>Spazio richiesto:</strong> 200-300 MB</li>
+                </ul>
+                
+                <div class="warning-box">
+                    <i class="fas fa-info-circle"></i>
+                    <strong>Compatibilità:</strong> L'App potrebbe non funzionare correttamente su dispositivi non supportati, ROM personalizzate o emulatori. Nessun supporto garantito per configurazioni non standard.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-user-tie"></i> 11. Uso nel Contesto PA</h2>
+                <p>Scadenze PA è progettata per assistere dipendenti della Pubblica Amministrazione, ma:</p>
+                
+                <div class="critical-box">
+                    <h3><i class="fas fa-exclamation-circle"></i> DISCLAIMER PA</h3>
+                    <ul>
+                        <li>❌ L'App <strong>NON sostituisce</strong> sistemi ufficiali di protocollazione e gestione documentale</li>
+                        <li>❌ <strong>NON è certificata</strong> da alcun ente pubblico o autorità</li>
+                        <li>❌ <strong>NON ha valore legale</strong> come prova di adempimento</li>
+                        <li>❌ <strong>NON è conforme</strong> a specifici regolamenti interni di singole PA (verifica sempre)</li>
+                    </ul>
+                </div>
+                
+                <h3><i class="fas fa-shield-alt"></i> Raccomandazioni</h3>
+                <ul>
+                    <li>✅ Utilizza l'App come <strong>strumento personale ausiliario</strong></li>
+                    <li>✅ Verifica sempre con sistemi ufficiali della tua amministrazione</li>
+                    <li>✅ Non inserire dati sensibili o riservati (l'App non è certificata per dati classificati)</li>
+                    <li>✅ Consulta superiori/responsabili prima di adottare l'App per procedure critiche</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-lock"></i> 12. Sicurezza e Privacy</h2>
+                <p>Per informazioni dettagliate su come gestiamo la sicurezza e la privacy, consulta la <a href="privacy-policy.html">Privacy Policy</a>.</p>
+                
+                <div class="info-card">
+                    <h4><i class="fas fa-database"></i> Punti Chiave</h4>
+                    <ul>
+                        <li><strong>Dati locali:</strong> Salvati in database SQLite sul dispositivo</li>
+                        <li><strong>Google Drive sync:</strong> Opzionale, solo sul tuo account personale</li>
+                        <li><strong>Annunci:</strong> Solo non personalizzati, dati minimi raccolti da Google</li>
+                        <li><strong>Nessun server proprietario:</strong> Non trasmettiamo dati a server dello sviluppatore</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-gavel"></i> 13. Legge Applicabile e Giurisdizione</h2>
+                <p>Questi Termini di Servizio sono regolati dalla <strong>legge italiana</strong>.</p>
+                <p>Per qualsiasi controversia relativa all'uso dell'App o a questi Termini, sarà competente in via esclusiva il <strong>Foro di Santa Maria Capua Vetere (CE)</strong>, Italia.</p>
+                
+                <div class="warning-box">
+                    <i class="fas fa-info-circle"></i>
+                    <strong>Diritti del consumatore:</strong> Se sei un consumatore (ai sensi del Codice del Consumo D.Lgs. 206/2005), nulla in questi Termini limita i tuoi diritti inderogabili previsti dalla legge.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-life-ring"></i> 14. Supporto e Assistenza</h2>
+                <p>Il supporto per l'App è fornito su base "best effort" (miglior sforzo possibile) senza garanzie di tempi di risposta.</p>
+                
+                <div class="info-card">
+                    <h4><i class="fas fa-envelope"></i> Contatto Supporto</h4>
+                    <p><strong>Email:</strong> appdevmond@gmail.com<br>
+                    <strong>Oggetto:</strong> SUPPORTO SCADENZE PA<br>
+                    <strong>Tempo risposta:</strong> 3-7 giorni lavorativi (non garantito)</p>
+                </div>
+                
+                <h3><i class="fas fa-question-circle"></i> Prima di Contattare</h3>
+                <ul>
+                    <li>Controlla se c'è un aggiornamento disponibile dell'App</li>
+                    <li>Verifica che il tuo dispositivo soddisfi i requisiti minimi</li>
+                    <li>Riavvia l'App e il dispositivo</li>
+                    <li>Consulta la documentazione e le FAQ (se disponibili)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-balance-scale"></i> 15. Separabilità</h2>
+                <p>Se una qualsiasi disposizione di questi Termini venisse ritenuta invalida o inapplicabile da un tribunale, le restanti disposizioni rimarranno in pieno vigore ed effetto.</p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-envelope"></i> 16. Contatti</h2>
+                <p>Per domande su questi Termini di Servizio o per esercitare i tuoi diritti:</p>
+                
+                <div class="info-card">
+                    <h4>Contatto Legale</h4>
+                    <p><strong>Email:</strong> appdevmond@gmail.com<br>
+                    <strong>Oggetto:</strong> TERMINI SCADENZE PA<br>
+                    <strong>Sviluppatore:</strong> Antonio Rota<br>
+                    <strong>Località:</strong> Mondragone, Italia</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-file-alt"></i> 17. Documento Integrativo</h2>
+                <p>Questi Termini di Servizio devono essere letti insieme a:</p>
+                <ul>
+                    <li><strong><a href="privacy-policy.html">Privacy Policy</a>:</strong> Gestione dati personali e GDPR</li>
+                    <li><strong><a href="https://policies.google.com/terms" target="_blank">Termini Google AdMob</a>:</strong> Termini del servizio pubblicitario</li>
+                    <li><strong><a href="https://policies.google.com/terms/service-specific" target="_blank">Termini Google Drive</a>:</strong> Termini sincronizzazione cloud</li>
+                </ul>
+            </div>
+
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Torna alla Homepage
+            </a>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Antonio Rota - Scadenze PA. Tutti i diritti riservati.</p>
+            <p>
+                <a href="privacy-policy.html" style="color: white;">Privacy Policy</a> | 
+                <a href="terms-of-service.html" style="color: white;">Termini di Servizio</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
