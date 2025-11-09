@@ -6,9 +6,9 @@
 
 
 
-[![Download APK](https://img.shields.io/badge/Download-Android_APK-blue?style=for-the-badge&logo=android)](https://github.com/R00kie7/ScadenzePA/releases)[![Download APK](https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android)](https://github.com/R00kie7/calcolostraordinario/releases)
+[![Download APK](https://img.shields.io/badge/Download-Android_APK-blue?style=for-the-badge&logo=android)](https://github.com/R00kie7/ScadenzePA/releases)[![Download APK](https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android)](https://github.com/R00kie7/ScadenzePA/releases)
 
-[![Download Windows](https://img.shields.io/badge/Download-Windows-0078D6?style=for-the-badge&logo=windows)](https://github.com/R00kie7/ScadenzePA/releases)[![Website](https://img.shields.io/badge/Website-Live-green?style=for-the-badge&logo=github-pages)](https://r00kie7.github.io/calcolostraordinario/)
+[![Download Windows](https://img.shields.io/badge/Download-Windows-0078D6?style=for-the-badge&logo=windows)](https://github.com/R00kie7/ScadenzePA/releases)[![Website](https://img.shields.io/badge/Website-Live-green?style=for-the-badge&logo=github-pages)](https://r00kie7.github.io/ScadenzePA/)
 
 [![Website](https://img.shields.io/badge/Website-Live-green?style=for-the-badge&logo=github-pages)](https://r00kie7.github.io/scadenzepa/)
 
@@ -129,7 +129,7 @@ Filtra eventi per:
 
 ### 📤 **Export Multipli**
 
-- 📊 **Excel**: Report completi con tutte le procedure**  [Guida Setup Completa](https://r00kie7.github.io/calcolostraordinario/setup.html)**
+- 📊 **Excel**: Report completi con tutte le procedure**  [Guida Setup Completa](https://r00kie7.github.io/ScadenzePA/setup.html)**
 
 - 📄 **PDF**: Documenti stampabili professionali
 
@@ -143,7 +143,7 @@ Filtra eventi per:
 
 - Backup automatico sul tuo account personale### 🤖 Android
 
-- Multi-dispositivo (Android + Windows)- **APK Diretta:** [Download dall'area releases](https://github.com/R00kie7/calcolostraordinario/releases)
+- Multi-dispositivo (Android + Windows)- **APK Diretta:** [Download dall'area releases](https://github.com/R00kie7/ScadenzePA/releases)
 
 - Zero server proprietari- **Google Play Store:** Prossimamente
 
@@ -159,13 +159,13 @@ Filtra eventi per:
 
 - **APK Diretta:** [Download releases](https://github.com/R00kie7/ScadenzePA/releases)
 
-- **Requisiti:** Android 5.0+ (Lollipop)- **🏠 Homepage:** [calcolostraordinario.github.io](https://r00kie7.github.io/calcolostraordinario/)
+- **Requisiti:** Android 5.0+ (Lollipop)- **🏠 Homepage:** [scadenzepa.github.io](https://r00kie7.github.io/scadenzepa/)
 
-- **Dimensione:** ~50-100 MB- **⚙️ Guida Setup:** [Setup completo](https://r00kie7.github.io/calcolostraordinario/setup.html)
+- **Dimensione:** ~50-100 MB- **⚙️ Guida Setup:** [Setup completo](https://r00kie7.github.io/scadenzepa/setup.html)
 
-- **🛡️ Privacy Policy:** [Policy completa](https://r00kie7.github.io/calcolostraordinario/privacy-policy.html)
+- **🛡️ Privacy Policy:** [Policy completa](https://r00kie7.github.io/scadenzepa/privacy-policy.html)
 
-### 💻 **Windows**- **📋 Termini di Servizio:** [Terms of Service](https://r00kie7.github.io/calcolostraordinario/terms-of-service.html)
+### 💻 **Windows**- **📋 Termini di Servizio:** [Terms of Service](https://r00kie7.github.io/scadenzepa/terms-of-service.html)
 
 - **Microsoft Store:** In valutazione
 
@@ -179,7 +179,7 @@ Filtra eventi per:
 
 - **📧 Email:** appdevmond@gmail.com
 
----- **🐛 Bug Report:** [GitHub Issues](https://github.com/R00kie7/calcolostraordinario/issues)
+---- **🐛 Bug Report:** [GitHub Issues](https://github.com/R00kie7/scadenzepa/issues)
 
 - **💡 Suggerimenti:** Email diretta
 
