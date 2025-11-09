@@ -48,9 +48,6 @@ Con un setup iniziale di pochi minuti, potrai **registrare entrata e uscita con 
 
 - ✅ GDPR compliant
 
-🎯 **Calcolo Automatico Straordinari**  
-
----Inserisci entrata/uscita, l'app calcola tutto secondo le tue impostazioni contrattuali
 
 
 
