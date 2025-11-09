@@ -149,10 +149,6 @@ Filtra eventi per:
 
 
 
----###   iOS
-
-- **App Store:** In sviluppo
-
 ## 🚀 **Disponibile su Due Piattaforme**
 
 ---
