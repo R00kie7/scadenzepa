@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scadenze PA - Gestione Scadenze Pubblica Amministrazione</title>
+    <meta name="description" content="Scadenze PA - App gratuita per gestire scadenze,
+
+ procedure amministrative ed eventi nella PA. Notifiche intelligenti, backup locale, completamente offline.">
+    <meta name="keywords" content="scadenze pa, pubblica amministrazione, procedure, gestione scadenze, enti pubblici, comuni, deadline management">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+            min-height: 100vh;
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        header { padding: 2rem 0; text-align: center; color: white; }
+        
+        .hero {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #fff, #f0f8ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p { font-size: 1.3rem; margin-bottom: 2rem; opacity: 0.9; }
+        
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .nav a {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .nav a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .main-content {
+            background: white;
+            border-radius: 20px;
+            margin: 2rem 0;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section { padding: 3rem 2rem; }
+        .section:nth-child(even) { background: #f8f9fa; }
+        
+        .section h2 {
+            color: #3B82F6;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid #3B82F6;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover { transform: translateY(-5px); }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: #3B82F6;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #10B981, #3B82F6);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+        
+        .warning-box {
+            background: #FEF3C7;
+            border: 1px solid #FCD34D;
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .info-box {
+            background: #EFF6FF;
+            border-left: 4px solid #3B82F6;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+        }
+        
+        .download-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+            color: white;
+        }
+        
+        .download-button {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            margin: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .download-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+        }
+        
+        footer {
+            background: #1F2937;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        footer a { color: #93C5FD; text-decoration: none; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="hero">
+                <h1><i class="fas fa-calendar-check"></i> Scadenze PA</h1>
+                <p>Gestione professionale di scadenze e procedure per la Pubblica Amministrazione</p>
+                <nav class="nav">
+                    <a href="#features"><i class="fas fa-star"></i> Funzionalità</a>
+                    <a href="#how-it-works"><i class="fas fa-cog"></i> Come Funziona</a>
+                    <a href="privacy-policy.html"><i class="fas fa-shield-alt"></i> Privacy</a>
+                    <a href="terms-of-service.html"><i class="fas fa-file-contract"></i> Termini</a>
+                    <a href="#download"><i class="fas fa-download"></i> Download</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section id="overview" class="section">
+                <h2><i class="fas fa-rocket"></i> Perché Scegliere Scadenze PA?</h2>
+                <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
+                    L'app pensata per dipendenti della Pubblica Amministrazione che devono gestire procedure complesse,
+                    scadenze multiple e documentazione. Tutto offline, privacy garantita, completamente gratuita.
+                </p>
+                
+                <div class="highlight-box">
+                    <h3 style="color: white; margin-bottom: 1rem;"><i class="fas fa-gift"></i> App Completamente Gratuita</h3>
+                    <p style="margin: 0;">Scadenze PA è <strong>100% gratuita per sempre</strong>. Include annunci non personalizzati che ci permettono di mantenerla gratuita senza compromettere la tua privacy. Nessuna profilazione, nessun tracciamento comportamentale.</p>
+                </div>
+            </section>
+
+            <section id="features" class="section">
+                <h2><i class="fas fa-magic"></i> Funzionalità Principali</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-folder-open"></i></div>
+                        <h3>Procedure Riutilizzabili</h3>
+                        <p>Crea template di procedure con passaggi predefiniti. Riutilizzale infinite volte risparmiando tempo e riducendo errori.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <h3>Eventi e Azioni</h3>
+                        <p>Ogni evento (es. gara d'appalto) genera automaticamente azioni con scadenze. Monitora lo stato avanzamento in tempo reale.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-bell"></i></div>
+                        <h3>Notifiche Intelligenti</h3>
+                        <p>Ricevi promemoria personalizzati per ogni scadenza. Configurabili per tipologia e priorità.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-tags"></i></div>
+                        <h3>Categorie e Organizzazione</h3>
+                        <p>7 categorie predefinite (Appalti, Urbanistica, Personale, Contabilità, Ambiente, Cultura, Altro) con icone colorate.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-search"></i></div>
+                        <h3>Ricerca Avanzata</h3>
+                        <p>Cerca per categoria, titolo, data scadenza o numero protocollo. Filtri combinabili per trovare subito ciò che serve.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-cloud"></i></div>
+                        <h3>Sincronizzazione Google Drive</h3>
+                        <p>Backup automatico opzionale su Google Drive. Sincronizza su più dispositivi senza perdere dati.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-file-export"></i></div>
+                        <h3>Export Dati</h3>
+                        <p>Esporta in JSON, Excel o PDF. Condividi report tramite email o WhatsApp.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-wifi-slash"></i></div>
+                        <h3>Funzionamento Offline</h3>
+                        <p>Tutti i dati salvati localmente sul dispositivo. Nessuna connessione richiesta per l'uso quotidiano.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
+                        <h3>Privacy Garantita</h3>
+                        <p>Zero tracciamento personale. Annunci contestuali non personalizzati. I tuoi dati rimangono solo sul tuo dispositivo.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="how-it-works" class="section">
+                <h2><i class="fas fa-cog"></i> Come Funziona</h2>
+                
+                <div class="feature-card" style="margin-bottom: 2rem;">
+                    <h3><i class="fas fa-1"></i> Crea Procedure Template</h3>
+                    <p>Definisci procedure tipo (es. "Gara d'Appalto" con passaggi: bando, presentazione offerte, aggiudicazione, stipula contratto). Assegna categoria, colore e scadenze relative.</p>
+                </div>
+
+                <div class="feature-card" style="margin-bottom: 2rem;">
+                    <h3><i class="fas fa-2"></i> Genera Eventi</h3>
+                    <p>Quando inizi una nuova pratica, seleziona la procedura template. L'app genera automaticamente tutte le azioni con date calcolate.</p>
+                </div>
+
+                <div class="feature-card" style="margin-bottom: 2rem;">
+                    <h3><i class="fas fa-3"></i> Monitora e Completa</h3>
+                    <p>Visualizza scadenze in calendario, HOME o lista. Swipe destro per completare azioni. Ricevi notifiche in anticipo.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3><i class="fas fa-4"></i> Analizza e Esporta</h3>
+                    <p>Consulta statistiche, filtra per periodo o categoria. Esporta report per condivisione o archiviazione.</p>
+                </div>
+            </section>
+
+            <section id="ads-info" class="section">
+                <h2><i class="fas fa-ad"></i> Annunci Non Personalizzati - Cosa Significa?</h2>
+                
+                <div class="info-box">
+                    <h3 style="color: #3B82F6; margin-bottom: 1rem;">Scelta Etica per la Tua Privacy</h3>
+                    <p>Scadenze PA utilizza <strong>esclusivamente annunci non personalizzati</strong> forniti da Google AdMob. Questo significa:</p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li><strong>Nessuna profilazione comportamentale:</strong> Non tracciamo i tuoi interessi o abitudini</li>
+                        <li><strong>Annunci contestuali:</strong> Basati sul contenuto dell'app, non su di te</li>
+                        <li><strong>Dati minimi raccolti:</strong> Solo informazioni tecniche essenziali (tipo dispositivo, lingua, posizione approssimata da IP per targeting geografico)</li>
+                        <li><strong>Conformità GDPR automatica:</strong> Non serve consenso esteso perché non c'è profilazione personalizzata</li>
+                    </ul>
+                </div>
+
+                <div class="warning-box">
+                    <p style="margin: 0;"><i class="fas fa-info-circle"></i> <strong>Cosa raccoglie Google con annunci non personalizzati:</strong></p>
+                    <ul style="margin: 0.5rem 0 0 2rem; padding: 0;">
+                        <li>Indirizzo IP (per posizione geografica approssimata)</li>
+                        <li>Tipo e modello dispositivo</li>
+                        <li>Sistema operativo e lingua</li>
+                        <li>Dati anonimi su visualizzazioni/click annunci</li>
+                    </ul>
+                    <p style="margin: 0.5rem 0 0 0;"><strong>NON raccoglie:</strong> Dati di navigazione, cronologia app, interessi personali, profili utente</p>
+                </div>
+
+                <div class="highlight-box">
+                    <h3 style="color: white; margin-bottom: 1rem;"><i class="fas fa-heart"></i> Perché è Importante</h3>
+                    <p>Gli annunci ci permettono di offrire Scadenze PA completamente gratuita senza compromettere la tua privacy. Hai il controllo totale: nessun dato sensibile viene raccolto, nessun tracciamento personale, nessuna vendita dati a terzi.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section id="download" class="download-section">
+        <div class="container">
+            <h2><i class="fas fa-download"></i> Scarica Ora</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                Inizia subito a gestire le tue scadenze PA con privacy e controllo totale
+            </p>
+            
+            <div>
+                <a href="#" class="download-button">
+                    <i class="fab fa-google-play"></i> Google Play Store (Prossimamente)
+                </a>
+                <a href="#" class="download-button">
+                    <i class="fab fa-windows"></i> Windows (Prossimamente)
+                </a>
+            </div>
+            
+            <p style="margin-top: 2rem; opacity: 0.8;">
+                <i class="fas fa-gift"></i> 100% Gratuita • <i class="fas fa-shield-alt"></i> Privacy Garantita • <i class="fas fa-wifi-slash"></i> Funziona Offline
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Scadenze PA - Sviluppata da Antonio Rota</p>
+            <p>
+                <a href="mailto:appdevmond@gmail.com">
+                    <i class="fas fa-envelope"></i> appdevmond@gmail.com
+                </a> • 
+                <a href="privacy-policy.html">Privacy Policy</a> •
+                <a href="terms-of-service.html">Termini di Servizio</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
